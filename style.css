@@ -56,8 +56,8 @@ img {
 } 
 
 .buttom {
-    width: 350px;
-    height: 35px;
+    width: 21.8rem;
+    height: 2.8rem;
     background-color: var(--buttom-color);
     border-radius: 20px;
     border: 8px solid var(--buttom-color);
@@ -83,7 +83,7 @@ img {
 
 /*Logo*/
 #header .logo img {
-    width: 150px;
+    width: 9rem;
 }
 
 /*menu*/
@@ -116,23 +116,14 @@ img {
 #hero .hero {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 75vh;
+    justify-content: center;
+    align-items: center;
     background: url(img/banner.jpeg) no-repeat;
-    background-size: auto 100%;
-    background-position: top center;
+    background-size: cover;
+    background-position: center;
     position: relative;
+    
 }
-
-/* #hero .banner {
-    width: 100%;
-    height: 75vh;
-    background: url(img/banner.jpeg) no-repeat;
-    background-size: auto 100%;
-    background-position: top center;
-    position: relative;
-
-} */
 
 #hero .hero .hero-all {
     width: 100%;
@@ -140,24 +131,24 @@ img {
     background-image: linear-gradient(to right,#2ebd59, #0fad19, #2ebd59);
     position: relative;
     top: 15rem;
- 
+
 }
 
 #hero .hero .hero-all .hero-info {
-    width: 450px;
+    width: 25rem;
     height: auto;
     position: relative;
     display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px ;
+    padding: 0 20px;
     color: var(--white-color);
 }
 
 .hero-all .hero-info h1 {
     font-size: 1.8rem;
-    padding: 20px 0;
+    padding: 20px 10px 0 0;
 }
 
 .hero-all .hero-info p {
@@ -183,10 +174,10 @@ img {
 }
 
 #hero .logo img {
-    width: 130px;
+    width: 8rem;
     height: auto;
     position: relative;
-    left: 1rem;
+    left: 0;
 }
 
 /* ----- End Hero Banner ----- */
@@ -208,7 +199,7 @@ img {
 }
 
 #vantagens .vantagens .items-vantagens {
-    width: 200px;
+    width: 12rem;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -219,7 +210,7 @@ img {
 }
 
 .vantagens .item-vantagem img {
-    width: 200px;
+    width: 12rem;
     height: auto;
     
 }
@@ -254,8 +245,8 @@ img {
 }
 
 #courses .courses .bar-top {
-    width: 430px;
-    height: 350px;
+    width: 22.8rem;
+    height: 21.8rem;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -268,12 +259,12 @@ img {
 }
 
 #courses .courses .bar-top .logo {
-    width: 130px;
+    width: 8rem;
     height: auto;
 }
 
 #courses .courses .bar-top .buttom {
-    width: 180px;
+    width: 11rem;
 }
 
 #courses .courses .bar-top .buttom a {
@@ -285,7 +276,7 @@ img {
 
 
 #courses .courses .bar-top ul li {
-    width: 400px; 
+    width: 19rem; 
     height: auto; 
     text-align: left;
     list-style: none;
@@ -299,7 +290,7 @@ img {
 }
 
 .bar-top ul .icon-list-check {
-    width: 400px;
+    width: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -319,7 +310,7 @@ img {
 /*carrocel cursos ampli*/
 
 #courses .carousel {
-    width: 500px;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,7 +327,7 @@ img {
 
 .carousel .carousel-container .carousel__item img {
     width: 100%;
-    max-width: 300px;
+    max-width: 18rem;
     height: auto;
 }
 
@@ -446,7 +437,6 @@ img {
 }
 
 
-
 #courses .carousel .carousel__item p {
     font-size: 1rem;
     font-weight: 800;
@@ -495,6 +485,23 @@ img {
 /* ----- End Footer ----- */
 
 
+@media only screen and (min-width: 260px) {
+    #hero .hero .hero-all {
+        position: relative;
+        top: 15rem;
+    }
+
+    #hero .hero .hero-all .buttom-logo .logo img {
+        position: relative;
+        right: 10rem;
+    }
+
+    #vantagens .vantagens h3 {
+        padding-top: 5rem;
+    }
+}
+
+
 /* ----- Responsive media tablet ----- */
 @media only screen and (min-width: 768px) {
 
@@ -508,7 +515,7 @@ img {
     #hero .hero .hero-all {
         width: 100%;
         height: 100%;
-        position: relative;
+        position: absolute;
         background-image: linear-gradient(to right,rgba(46, 189, 89, 1), rgba(1, 101, 7, 0.5), rgba(46, 189, 89, 0.1));
         background-size: cover;
         top:0;
